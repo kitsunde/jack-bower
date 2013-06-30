@@ -4,3 +4,6 @@ dist/
 docs/_build/
 media/
 static/
+
+# PyCharm
+.idea
