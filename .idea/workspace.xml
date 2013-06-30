@@ -9,6 +9,7 @@
     <file path="/setup.py" changelist="8002e6c2-ce3d-4ff7-8421-3221605fc886" time="1372624957143" ignored="false" />
     <file path="/AUTHORS" changelist="8002e6c2-ce3d-4ff7-8421-3221605fc886" time="1372625295451" ignored="false" />
     <file path="/PKG-INFO" changelist="8002e6c2-ce3d-4ff7-8421-3221605fc886" time="1372625341069" ignored="false" />
+    <file path="/__init__.py" changelist="8002e6c2-ce3d-4ff7-8421-3221605fc886" time="1372625910588" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.50711745">
+            <state line="38" column="0" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,7 +87,7 @@
       <file leaf-file-name="setup.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="17" selection-start="1123" selection-end="1123" vertical-scroll-proportion="-21.0">
+            <state line="41" column="28" selection-start="1183" selection-end="1183" vertical-scroll-proportion="-23.4">
               <folding />
             </state>
           </provider>
@@ -110,10 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="__init__.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bower/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.027297543">
               <folding />
             </state>
           </provider>
@@ -139,6 +140,7 @@
         <option value="$PROJECT_DIR$/jack_bower.egg-info/PKG-INFO" />
         <option value="$PROJECT_DIR$/README.rst" />
         <option value="$PROJECT_DIR$/docs/README.md" />
+        <option value="$PROJECT_DIR$/bower/__init__.py" />
       </list>
     </option>
   </component>
@@ -504,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -541,16 +536,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$PROJECT_DIR$/docs/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="17" selection-start="1123" selection-end="1123" vertical-scroll-proportion="-21.0">
+        <state line="38" column="0" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/README.md">
+    <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.50711745">
+        <state line="41" column="28" selection-start="1183" selection-end="1183" vertical-scroll-proportion="-23.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.027297543">
           <folding />
         </state>
       </provider>
