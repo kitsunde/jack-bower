@@ -46,8 +46,8 @@ setup(
     platforms=['OS Independent'],
     keywords='django, app, reusable, bower, frontend',
     author='Kit Sunde',
-    author_email='kit@mediapop.co',
-    url="https://github.com/mediapop/jack-bower",
+    author_email='kisunde@gmail.com',
+    url="https://github.com/Celc/jack-bower",
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
