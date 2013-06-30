@@ -12,7 +12,7 @@ To get the latest stable release from PyPi::
 
 To get the latest commit from GitHub::
 
-    $ pip install -e git+git://github.com/mediapop/jack-bower.git#egg=bower
+    $ pip install -e git+git://github.com/Celc/jack-bower.git#egg=bower
 
 Add ``bower`` to your ``INSTALLED_APPS``::
 
@@ -39,8 +39,7 @@ In your Django app you can place the normal bower files `.bowerrc` and
     {
         "dependencies": {
             "backbone": "1.0.0",
-            "underscore": "1.4.4",
-            "bootstrap-daterangepicker": "git://github.com/dangrossman/bootstrap-daterangepicker.git"
+            "underscore": "1.4.4"
         }
     }
 

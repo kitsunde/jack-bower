@@ -5,7 +5,7 @@
     <ignored path="jack-bower.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/bower_install.py" changelist="8002e6c2-ce3d-4ff7-8421-3221605fc886" time="1372624263139" ignored="false" />
-    <file path="/README.rst" changelist="8002e6c2-ce3d-4ff7-8421-3221605fc886" time="1372624805965" ignored="false" />
+    <file path="/README.rst" changelist="8002e6c2-ce3d-4ff7-8421-3221605fc886" time="1372625761783" ignored="false" />
     <file path="/setup.py" changelist="8002e6c2-ce3d-4ff7-8421-3221605fc886" time="1372624957143" ignored="false" />
     <file path="/AUTHORS" changelist="8002e6c2-ce3d-4ff7-8421-3221605fc886" time="1372625295451" ignored="false" />
     <file path="/PKG-INFO" changelist="8002e6c2-ce3d-4ff7-8421-3221605fc886" time="1372625341069" ignored="false" />
@@ -104,7 +104,7 @@
       <file leaf-file-name="README.rst" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="604" selection-end="604" vertical-scroll-proportion="0.5050045">
+            <state line="41" column="33" selection-start="699" selection-end="699" vertical-scroll-proportion="0.55959964">
               <folding />
             </state>
           </provider>
@@ -549,7 +549,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="604" selection-end="604" vertical-scroll-proportion="0.5050045">
+        <state line="41" column="33" selection-start="699" selection-end="699" vertical-scroll-proportion="0.55959964">
           <folding />
         </state>
       </provider>
