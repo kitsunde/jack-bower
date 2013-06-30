@@ -1,5 +1,5 @@
-Django Jack Bower
-=================
+Jack Bower
+==========
 
 Installing frontend Django dependencies via bower.
 

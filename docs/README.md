@@ -18,7 +18,7 @@ Answer the questions:
     > Root path for the documentation [.]:
     > Separate source and build directories (y/N) [n]: y
     > Name prefix for templates and static dir [_]:
-    > Project name: Django Jack Bower
+    > Project name: Jack Bower
     > Author name(s): Kit Sunde
     > Project version: 0.1
     > Project release [0.1]:
