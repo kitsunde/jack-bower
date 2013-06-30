@@ -28,13 +28,13 @@ Usage
 In your Django app you can place the normal bower files `.bowerrc` and
 `bower.json`.
 
-`/my_app/.bowerrc`:
+`/my_app/.bowerrc`::
 
     {
       "directory": "static/libs"
     }
 
-`/my_app/bower.json`:
+`/my_app/bower.json`::
 
     {
         "dependencies": {
