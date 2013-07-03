@@ -1,6 +1,9 @@
 .. role:: python(code)
    :language: python
 
+.. role:: bash(code)
+   :language: bash
+
 Jack Bower
 ==========
 
@@ -9,15 +12,21 @@ Installing frontend Django dependencies via bower.
 Installation
 ------------
 
-To get the latest stable release from PyPi:: bash
+To get the latest stable release from PyPi
+
+.. code-block:: bash
 
     $ pip install jack-bower
 
-To get the latest commit from GitHub:: bash
+To get the latest commit from GitHub
+
+.. code-block:: bash
 
     $ pip install -e git+git://github.com/Celc/jack-bower.git#egg=bower
 
-Add ``bower`` to your ``INSTALLED_APPS``:: python
+Add ``bower`` to your ``INSTALLED_APPS``
+
+.. code-block:: python
 
     INSTALLED_APPS = (
         ...,
@@ -28,9 +37,11 @@ Add ``bower`` to your ``INSTALLED_APPS``:: python
 Usage
 -----
 
-Use :python:`./manage.py bower_init <app_name>` to bootstrap an app with
+Use :bash:`./manage.py bower_init <app_name>` to bootstrap an app with
 :python:`.bowerrc`, :python:`bower.json` and :python:`.gitignore`. Add your
-dependencies to :python:`bower.json` like:: python
+dependencies to :python:`bower.json`
+
+.. code-block:: python
 
     {
         "dependencies": {
@@ -39,7 +50,7 @@ dependencies to :python:`bower.json` like:: python
         }
     }
 
-Then just run :python:`./manage.py bower_install` and it'll install all the
+Then just run :bash:`./manage.py bower_install` and it'll install all the
 dependencies in all the :python:`INSTALLED_APPS` apps that has a
 :python:`bower.json`. Default install path is :python:`static/libs/<library>`,
 you can edit :python:`.bowerrc` to change that.
