@@ -25,16 +25,8 @@ Add ``bower`` to your ``INSTALLED_APPS``::
 Usage
 -----
 
-In your Django app you can place the normal bower files `.bowerrc` and
-`bower.json`.
-
-`/my_app/.bowerrc`::
-
-    {
-      "directory": "static/libs"
-    }
-
-`/my_app/bower.json`::
+Use `./manage.py bower_init <app_name>` to bootstrap an app with `.bowerrc`,
+`bower.json` and `.gitignore`. Add your dependencies to `bower.json` like::
 
     {
         "dependencies": {
@@ -44,8 +36,13 @@ In your Django app you can place the normal bower files `.bowerrc` and
     }
 
 Then just run `./manage.py bower_install` and it'll install all the dependencies
-in all the `INSTALLED_APPS` apps that has a `bower.json`.
+in all the `INSTALLED_APPS` apps that has a `bower.json`. Default install path
+is `static/libs/<library>`, you can edit `.bowerrc` to change that.
 
+Use like normal in templates::
+
+    {% load staticfiles %}
+    {% static 'lib/bootstrap/bootstrap.js'%}
 
 Contribute
 ----------
