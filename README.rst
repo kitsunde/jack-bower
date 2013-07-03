@@ -38,10 +38,10 @@ Usage
 -----
 
 Use :bash:`./manage.py bower_init <app_name>` to bootstrap an app with
-:python:`.bowerrc`, :python:`bower.json` and :python:`.gitignore`. Add your
-dependencies to :python:`bower.json`
+``.bowerrc``, ``bower.json`` and ``.gitignore``. Add your
+dependencies to ``bower.json``
 
-.. code-block:: python
+.. code-block:: javascript
 
     {
         "dependencies": {
@@ -51,9 +51,9 @@ dependencies to :python:`bower.json`
     }
 
 Then just run :bash:`./manage.py bower_install` and it'll install all the
-dependencies in all the :python:`INSTALLED_APPS` apps that has a
-:python:`bower.json`. Default install path is :python:`static/libs/<library>`,
-you can edit :python:`.bowerrc` to change that.
+dependencies in all the ``INSTALLED_APPS`` apps that has a
+``bower.json``. Default install path is ``static/libs/<library>``,
+you can edit ``.bowerrc`` to change that.
 
 Use like normal in templates::
 
@@ -64,7 +64,9 @@ Contribute
 ----------
 
 If you want to contribute to this project, please perform the following
-steps:: bash
+steps:
+
+.. code-block:: bash
 
     # Fork this repository
     # Clone your fork
