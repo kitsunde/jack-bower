@@ -1,13 +1,9 @@
 import os
-import pkgutil
-from django.conf import settings
-from django.core.management.base import BaseCommand
+from bower.management.base import AppDirectoryCommand
 
 
-class Command(BaseCommand):
-    def handle(self, *args, **options):
-        for app in settings.INSTALLED_APPS:
-            path = pkgutil.get_loader(app).filename
-            if os.path.exists(os.path.join(path, 'bower.json')):
-                os.chdir(path)
-                os.system('bower install')
+class Command(AppDirectoryCommand):
+    def handle_app(self, app_path):
+        if os.path.exists(os.path.join(app_path, 'bower.json')):
+            os.chdir(app_path)
+            os.system('bower install')
