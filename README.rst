@@ -52,13 +52,13 @@ dependencies to ``bower.json``
 
 Then just run :bash:`./manage.py bower_install` and it'll install all the
 dependencies in all the ``INSTALLED_APPS`` apps that has a
-``bower.json``. Default install path is ``static/libs/<library>``,
+``bower.json``. Default install path is ``static/components/<library>``,
 you can edit ``.bowerrc`` to change that.
 
 Use like normal in templates::
 
     {% load staticfiles %}
-    {% static 'lib/bootstrap/bootstrap.js'%}
+    {% static 'components/bootstrap/bootstrap.js'%}
 
 Contribute
 ----------

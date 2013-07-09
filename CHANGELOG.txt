@@ -1,3 +1,6 @@
+=== 0.1.3 ===
+- Switched default install location to static/components
+
 === 0.1.2 ===
 - Added bower_init command for bootstrapping with skeleton bower configs.
 
