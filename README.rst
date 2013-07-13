@@ -1,6 +1,3 @@
-.. role:: python(code)
-   :language: python
-
 .. role:: bash(code)
    :language: bash
 
