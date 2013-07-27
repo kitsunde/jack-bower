@@ -1,4 +1,6 @@
 import os
+from django.template import Template, Context
+from django.template.loader import render_to_string
 from bower.management.base import AppDirectoryCommand
 import shutil
 
@@ -12,8 +14,13 @@ class Command(AppDirectoryCommand):
             target_file = os.path.join(app_path, init_file)
 
             if not os.path.exists(target_file):
-                shutil.copyfile(os.path.join(init_files, init_file),
-                                target_file)
+                with open(os.path.join(init_files, init_file)) as template_file:
+                    template = Template(template_file.read())
+                context = Context({
+                    'app_name': os.path.basename(app_path)
+                })
+                with open(os.path.join(app_path, init_file), "w") as f:
+                    f.write(template.render(context))
 
         print "Add your dependencies to %s " % os.path.join(app_path,
                                                             'bower.json')
