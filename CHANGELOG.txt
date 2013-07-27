@@ -1,3 +1,7 @@
+=== 0.1.5 ===
+- Changed install directory to static/bower_components to be consistent with 1.0
+- Fixed bower.json requiring a name in v1.0
+
 === 0.1.4 ===
 - Return non-0 if bower encounters an error on bower_install.
 
