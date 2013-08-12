@@ -13,6 +13,7 @@ class AppDirectoryCommand(BaseCommand):
     """
     args = '<appname appname ...>'
     default_apps = settings.INSTALLED_APPS
+    requires_model_validation = False
 
     def handle(self, *app_labels, **options):
         if not app_labels:
