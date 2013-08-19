@@ -68,7 +68,7 @@ steps:
     # Fork this repository
     # Clone your fork
     $ mkvirtualenv -p python2.7 jack-bower
-    $ node -g install bower
+    $ npm install -g bower
     $ python setup.py install
 
     $ git co -b feature_branch master
