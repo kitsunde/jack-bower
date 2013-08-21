@@ -4,6 +4,12 @@
 Jack Bower
 ==========
 
+.. image:: https://pypip.in/v/jack-bower/badge.png
+        :target: https://crate.io/packages/jack-bower 
+
+.. image:: https://pypip.in/d/jack-bower/badge.png
+        :target: https://crate.io/packages/jack-bower
+
 Installing frontend Django dependencies via bower.
 
 Installation
