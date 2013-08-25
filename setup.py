@@ -11,6 +11,10 @@ install_requires = [
     'django',
 ]
 
+test_requires = [
+    'django-discover-runner',
+]
+
 
 def read(fname):
     try:
@@ -34,5 +38,6 @@ setup(
     install_requires=install_requires,
     extras_require={
         'dev': dev_requires,
+        'test': test_requires
     },
 )

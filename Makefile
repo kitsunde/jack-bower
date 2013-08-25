@@ -13,3 +13,11 @@ lint-python:
 
 release:
 	python setup.py sdist upload
+
+test-py:
+	django-admin.py test bower --settings=bower.tests.test_settings
+
+test: install-test-requirements test-py
+
+install-test-requirements:
+	pip install "file://`pwd`#egg=bower[tests]"
