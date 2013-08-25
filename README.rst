@@ -4,6 +4,9 @@
 Jack Bower
 ==========
 
+.. image:: https://api.travis-ci.org/Celc/jack-bower.png?branch=master
+        :target: https://travis-ci.org/Celc/jack-bower
+
 .. image:: https://pypip.in/v/jack-bower/badge.png
         :target: https://crate.io/packages/jack-bower 
 
