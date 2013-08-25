@@ -1,5 +1,5 @@
 develop: setup-git
-	pip install "file://`pwd`#egg=bower[dev]"
+	pip install "file://`pwd`#egg=jack-bower[dev]"
 	pip install -e .
 
 setup-git:
@@ -20,4 +20,4 @@ test-py:
 test: install-test-requirements test-py
 
 install-test-requirements:
-	pip install "file://`pwd`#egg=bower[tests]"
+	pip install "file://`pwd`#egg=jack-bower[tests]"
