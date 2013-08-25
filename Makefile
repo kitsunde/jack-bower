@@ -1,5 +1,6 @@
 develop: setup-git
 	pip install "file://`pwd`#egg=jack-bower[dev]"
+	pip install "file://`pwd`#egg=jack-bower[tests]"
 	pip install -e .
 
 setup-git:
