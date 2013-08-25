@@ -11,7 +11,7 @@ install_requires = [
     'django',
 ]
 
-test_requires = [
+tests_requires = [
     'django-discover-runner',
 ]
 
@@ -38,6 +38,6 @@ setup(
     install_requires=install_requires,
     extras_require={
         'dev': dev_requires,
-        'test': test_requires
+        'tests': tests_requires
     },
 )
