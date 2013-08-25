@@ -19,13 +19,13 @@ To get the latest stable release from PyPi
 
 .. code-block:: bash
 
-    $ pip install jack-bower
+    pip install jack-bower
 
 To get the latest commit from GitHub
 
 .. code-block:: bash
 
-    $ pip install -e git+git://github.com/Celc/jack-bower.git#egg=bower
+    pip install -e git+git://github.com/Celc/jack-bower.git#egg=bower
 
 Add ``bower`` to your ``INSTALLED_APPS``
 
@@ -73,12 +73,12 @@ steps:
 
     # Fork this repository
     # Clone your fork
-    $ mkvirtualenv -p python2.7 jack-bower
-    $ npm install -g bower
-    $ python setup.py install
+    mkvirtualenv -p python2.7 jack-bower
+    npm install -g bower
+    python setup.py install
 
-    $ git co -b feature_branch master
+    git co -b feature_branch master
     # Implement your feature
-    $ git add . && git commit
-    $ git push -u origin feature_branch
+    git add . && git commit
+    git push -u origin feature_branch
     # Send us a pull request for your feature branch
