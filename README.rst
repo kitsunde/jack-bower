@@ -75,10 +75,7 @@ steps:
     # Clone your fork
     mkvirtualenv -p python2.7 jack-bower
     npm install -g bower
-    python setup.py install
+    make develop
 
-    git co -b feature_branch master
-    # Implement your feature
     git add . && git commit
-    git push -u origin feature_branch
-    # Send us a pull request for your feature branch
+    # Send us a pull request
