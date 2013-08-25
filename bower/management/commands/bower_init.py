@@ -1,8 +1,6 @@
 import os
 from django.template import Template, Context
-from django.template.loader import render_to_string
 from bower.management.base import AppDirectoryCommand
-import shutil
 
 
 class Command(AppDirectoryCommand):
