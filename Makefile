@@ -22,3 +22,6 @@ test: install-test-requirements test-py
 
 install-test-requirements:
 	pip install "file://`pwd`#egg=jack-bower[tests]"
+
+coverage: install-test-requirements
+	coverage run --source=bower `which django-admin.py` test bower --settings=bower.tests.test_settings

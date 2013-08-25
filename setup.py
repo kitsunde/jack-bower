@@ -13,6 +13,7 @@ install_requires = [
 
 tests_requires = [
     'django-discover-runner',
+    'coverage'
 ]
 
 

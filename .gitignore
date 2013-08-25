@@ -7,3 +7,7 @@ static/
 
 # PyCharm
 .idea
+
+# Coverage
+.coverage
+htmlcov/
