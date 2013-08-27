@@ -3,6 +3,11 @@ import json
 import os
 from django.core.management import CommandError
 from bower.management.base import AppDirectoryCommand
+from django.conf import settings
+
+BOWER_INSTALL = getattr(settings, 'BOWER_INSTALL', "bower install")
+
+print BOWER_INSTALL
 
 
 class Command(AppDirectoryCommand):
@@ -30,6 +35,7 @@ class Command(AppDirectoryCommand):
                               separators=(',', ': '))
 
             os.chdir(app_path)
-            if os.system('bower install') != 0:
+
+            if os.system(BOWER_INSTALL) != 0:
                 raise CommandError("Bower encountered an issue while "
                                    "installing.")

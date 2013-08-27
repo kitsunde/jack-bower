@@ -1,3 +1,6 @@
+=== 0.1.7 ===
+- Enable BOWER_INSTALL setting for overriding the bower install command.
+
 === 0.1.6 ===
 - Management commands no longer connects to the database.
 
