@@ -1,17 +1,26 @@
 from collections import OrderedDict
 import json
 import os
+from optparse import make_option
 from django.core.management import CommandError
 from bower.management.base import AppDirectoryCommand
 from django.conf import settings
 
-BOWER_INSTALL = getattr(settings, 'BOWER_INSTALL', "bower install")
+BOWER_INSTALL = getattr(settings, 'BOWER_INSTALL', 'bower install')
 
 print BOWER_INSTALL
 
 
 class Command(AppDirectoryCommand):
-    def handle_app(self, app_path):
+    option_list = AppDirectoryCommand.option_list + (
+        make_option('--noinput',
+                    action='store_false',
+                    dest='interactive',
+                    default=True,
+                    help='Suppress prompts from bower'),
+    )
+
+    def handle_app(self, app_path, **options):
         bower_file = os.path.join(app_path, 'bower.json')
         package_name = os.path.basename(app_path)
 
@@ -36,6 +45,12 @@ class Command(AppDirectoryCommand):
 
             os.chdir(app_path)
 
-            if os.system(BOWER_INSTALL) != 0:
+            BOWER_INSTALL_COMMAND = BOWER_INSTALL
+            if not options['interactive']:
+                BOWER_INSTALL_COMMAND = '{0} --config.interactive=false'.format(
+                    BOWER_INSTALL
+                )
+
+            if os.system(BOWER_INSTALL_COMMAND) != 0:
                 raise CommandError("Bower encountered an issue while "
                                    "installing.")
