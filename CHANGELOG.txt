@@ -1,3 +1,6 @@
+=== 0.1.8 ===
+- --noinput option to bower_install so it can run in batch mode.
+
 === 0.1.7 ===
 - Enable BOWER_INSTALL setting for overriding the bower install command.
 

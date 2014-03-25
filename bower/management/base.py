@@ -27,7 +27,7 @@ class AppDirectoryCommand(BaseCommand):
 
         for app in app_labels:
             path = pkgutil.get_loader(app).filename
-            self.handle_app(path)
+            self.handle_app(path, **options)
 
     def handle_app(self, app_label):
         raise NotImplementedError()
