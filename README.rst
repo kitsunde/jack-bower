@@ -10,12 +10,6 @@ Jack Bower
 .. image:: https://coveralls.io/repos/Celc/jack-bower/badge.png?branch=master
         :target: https://coveralls.io/r/Celc/jack-bower?branch=master
 
-.. image:: https://pypip.in/v/jack-bower/badge.png
-        :target: https://crate.io/packages/jack-bower 
-
-.. image:: https://pypip.in/d/jack-bower/badge.png
-        :target: https://crate.io/packages/jack-bower
-
 Installing frontend Django dependencies via bower.
 
 Installation
